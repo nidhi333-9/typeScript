@@ -1,7 +1,9 @@
 import "./App.css";
 import Greet from "./components/Greet";
+import Heading from "./components/Heading";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import Status from "./components/Status";
 
 function App() {
   const name = {
@@ -25,13 +27,15 @@ function App() {
   ];
   return (
     <div className="App">
-      <Greet
+      {/* <Greet
         name="Nidhi"
         count={10}
         isLoggedIn={true}
       />
       <Person name={name} />
-      <PersonList names={nameList} />
+      <PersonList names={nameList} /> */}
+      <Status status="success" />
+      <Heading>Placeholder Text</Heading>
     </div>
   );
 }
