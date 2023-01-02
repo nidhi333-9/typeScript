@@ -26,5 +26,12 @@ const enum Size {
 }
 
 let mySize: Size = Size.Large;
-
 console.log(mySize);
+// functions
+
+function calculateTax(income: number, taxYear = 2022) {
+  if (taxYear < 50_000) return income * 1.2;
+  return income * 1.3;
+}
+
+calculateTax(10_000);
