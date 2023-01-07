@@ -38,18 +38,28 @@
 
 // Objects
 
-type Employee = {
-  readonly id: number;
-  name: string;
-  retire: (date: Date) => void;
-};
-let employee: Employee = {
-  id: 1,
-  name: "",
-  retire: (date: Date) => {
-    console.log(date);
-  },
-};
-employee.name = "Nidhi";
+// type Employee = {
+//   readonly id: number;
+//   name: string;
+//   retire: (date: Date) => void;
+// };
+// let employee: Employee = {
+//   id: 1,
+//   name: "",
+//   retire: (date: Date) => {
+//     console.log(date);
+//   },
+// };
+// employee.name = "Nidhi";
 
 //
+
+// Union Types
+
+function kgToLbs(weight: number | string) {
+  if (typeof weight === "number") return weight * 2.2;
+  else return parseInt(weight) * 2.2;
+}
+
+kgToLbs(10);
+kgToLbs("20kg");
