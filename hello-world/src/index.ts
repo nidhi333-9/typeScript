@@ -80,3 +80,7 @@ let textBox: UIWidget = {
   drag: () => {},
   resize: () => {},
 };
+type Qunatity = 50 | 100;
+let quantity: Qunatity = 100;
+
+type Metric = "cm" | "inch";
