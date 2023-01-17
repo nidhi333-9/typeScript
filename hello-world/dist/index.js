@@ -17,4 +17,5 @@ function getCustomer(id) {
 let customer = getCustomer(0);
 if (customer !== null && customer !== undefined)
     console.log(customer.birthday);
+let firstName = "Nidhi";
 //# sourceMappingURL=index.js.map
