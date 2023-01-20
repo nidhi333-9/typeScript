@@ -1,22 +1,21 @@
 type StatusProps = {
-  status: "loading" | "error" | "success";
+  status: "loading" | "success" | "error";
 };
 
-const Status = (props: StatusProps) => {
+function Status(props: StatusProps) {
   let message;
   if (props.status === "loading") {
     message = "Loading...";
   } else if (props.status === "success") {
-    message = "Data fetched successfully";
+    message = "Data fetched successfully...";
   } else if (props.status === "error") {
-    message = "Error fetching data";
+    message = "Oops...U got an error...";
   }
-
   return (
     <div>
-      <h2>Status - {message}</h2>
+      <h1>{message}</h1>
     </div>
   );
-};
+}
 
 export default Status;

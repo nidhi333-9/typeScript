@@ -4,38 +4,58 @@ import Heading from "./components/Heading";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
+import Oscar from "./components/Oscar";
+import Button from "./components/Button";
+import Input from "./components/Input";
+import Container from "./components/Container";
 
 function App() {
   const name = {
-    firstName: "Nidhi",
-    lastName: "Sharma",
+    first: "Nidhi",
+    last: "Kumari",
   };
 
-  const nameList = [
+  const personList = [
+    {
+      first: "Nidhi",
+      last: "Sharma",
+    },
     {
       first: "Dipu",
       last: "Sharma",
     },
     {
       first: "Aman",
-      last: "Kumar",
-    },
-    {
-      first: "Sunita",
-      last: "Devi",
+      last: "Sharma",
     },
   ];
   return (
-    <div className="App">
-      {/* <Greet
+    <div>
+      {/* 
+      
+      <Person name={name} />
+      <PersonList names={personList} /> */}
+      {/* <Status status="success" />
+
+      <Oscar>
+        <Heading>Oscar goes to Leonard Dicaprio!</Heading>
+      </Oscar>
+      <Greet
         name="Nidhi"
-        count={10}
         isLoggedIn={true}
       />
-      <Person name={name} />
-      <PersonList names={nameList} /> */}
-      <Status status="success" />
-      <Heading>Placeholder Text</Heading>
+      <Button
+        handleClick={(event, id) => {
+          console.log("Button clicked!", event, id);
+        }}
+      />
+      <Input
+        value="codevolution"
+        handleChange={(event) => {
+          console.log(event);
+        }}
+      /> */}
+      <Container styles={{ border: "1px solid green", padding: "1rem" }} />
     </div>
   );
 }
